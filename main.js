@@ -12,3 +12,16 @@ menuBtn.addEventListener( "click", ()=>{
     nabvar.classList.toggle("nav-background");
     menu.classList.toggle("nav-toggle");
 });
+
+
+window.requestAnimFrame = (function() {
+    return  window.requestAnimationFrame       ||
+            window.webkitRequestAnimationFrame ||
+            window.mozRequestAnimationFrame    ||
+            function(callback) {
+                window.setTimeout(callback, 1000 / 60);
+            };
+})();
+
+//
+
