@@ -12,10 +12,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/df0028962f.js" crossorigin="anonymous"></script>
+    <!-- vinculacion bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
 
     <link rel="stylesheet" href="estilos.css">
 
-    <title>Workshop Landing</title>
+    <title>Stontur</title>
 </head>
 
 <body>
@@ -77,42 +81,107 @@
         </div>
     </section> -->
     <section class="body_g">
-        <h1 class="titulo_g">Find your favorite place...</h1>
+        <h1 class="titulo_g">Elegí tu lugar...</h1>
         <div class="container_g">
             <div class="thumbex">
-                <div class="thumbnail"><a href="javascript:void(0)"> <img
-                            src="imagen/camboriu.jpg" /><span>Camboriu</span></a></div>
-            </div>
-            <div class="thumbex">
-                <div class="thumbnail"><a href="javascript:void(0)"><img
-                            src="imagen/floriano.jpg" /><span>Florianopolis</span></a></div>
-            </div>
-            <div class="thumbex">
-                <div class="thumbnail"><a href="javascript:void(0)"><img src="imagen/vid.jpg" /><span>Nacionales</span></a>
-                </div>
-            </div>
-            <div class="thumbex">
-                <div class="thumbnail"><a href="javascript:void(0)"><img src="imagen/msc1.jpg" /><span>Cruceros</span></a>
-                </div>
-            </div>
-            <div class="thumbex">
-                <div class="thumbnail"><a href="javascript:void(0)"><img src="imagen/faro4.jpg" /><span>Brasil</span></a>
-                </div>
-            </div>
-            <div class="thumbex">
-                <div class="thumbnail"><a href="javascript:void(0)"><img src="imagen/machu.jpg" /><span>Peru</span></a>
-                </div>
-            </div>
+                <div class="thumbnail"><a href="#openModal"> <img src="imagen/exoticos.jpeg" /><span>Exóticos
+                        </span></a></div>
             </div>
 
+            <div class="thumbex">
+                <div class="thumbnail"><a href="#openModal"><img src="imagen/eu.jpeg" /><span>Europa</span></a></div>
+            </div>
+            <div class="thumbex">
+                <div class="thumbnail"><a href="#openModal"><img
+                            src="imagen/nacionales.jpeg" /><span>Nacionales</span></a>
+                </div>
+            </div>
+            <div class="thumbex">
+                <div class="thumbnail"><a href="#openModal"><img src="imagen/msc1.jpg" /><span>Cruceros</span></a>
+                </div>
+            </div>
+            <div class="thumbex">
+                <div class="thumbnail"><a href="#openModal"><img src="imagen/caribe.jpeg" /><span>Caribe</span></a>
+                </div>
+            </div>
+            <div class="thumbex">
+                <div class="thumbnail"><a href="#openModal"><img src="imagen/sud.jpeg" /><span>Sudamerica </span></a>
+                </div>
+            </div>
+            <div class="thumbex">
+                <div class="thumbnail"><a href="#openModal"> <img src="imagen/br.jpeg" /><span>Brasil
+                        </span></a></div>
+            </div>
         </div>
 
     </section>
     <section>
-        <H2>NOSOTROS</H2>
+        <div id="openModal" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Camboriu</h2>
+                <p>Balneário Camboriú es una ciudad turística del estado de Santa Catarina, en el sur de Brasil.</p>
+                <p>El monumento Cristo Luz es una enorme estatua de Cristo que mira de lo alto a la ciudad.</p>
+            </div>
+
+
     </section>
+    <section>
+    <H2>NOSOTROS</H2>
+    <p>Somos Estefi y Fede, licenciados en turismo y apasionados por nuestra profesión. Vemos en el,
+        una actividad que lleva al disfrute de nuestros clientes. Brindamos servicios y calidad para que nuestros pasajeros vuelvan felices.
+        Nuestro equipo de trabajo somos nosotros y USTEDES!!!</p>
+        
+    	<h3>Nuestros Clientes</h3>
+	
+	<ul class="galeria">
+		<li><a href="#img1"><img src="imagen/jujuy_clientes.jpg"></a></li>
+		<li><a href="#img2"><img src="imagen/jujuy_pax2.jpg"></a></li>
+		<li><a href="#img3"><img src="imagen/jujuy_pax3.jpg"></a></li>
+		<li><a href="#img4"><img src="imagen/pax4.jpg"></a></li>
+	</ul>
 
-
+	<div class="modal" id="img1">
+		<h3>Paisaje 1</h3>
+		<div class="imagen">
+			<a href="#img4">&#60;</a>
+			<a href="#img2"><img src="imagen/jujuy_clientes.jpg"></a>
+			<a href="#img2">></a>
+		</div>
+		<a class="cerrar" href="">X</a>
+	</div>
+	
+	<div class="modal" id="img2">
+		<h3>Paisaje 2</h3>
+		<div class="imagen">
+			<a href="#img1">&#60;</a>
+			<a href="#img3"><img src="imagen/jujuy_pax2.jpg"></a>
+			<a href="#img3">></a>
+		</div>
+		<a class="cerrar" href="">X</a>
+	</div>
+	
+	<div class="modal" id="img3">
+		<h3>Paisaje 3</h3>
+		<div class="imagen">
+			<a href="#img2">&#60;</a>
+			<a href="#img4"><img src="imagen/jujuy_pax3.jpg"></a>
+			<a href="#img4">></a>
+		</div>
+		<a class="cerrar" href="">X</a>
+	</div>
+	
+	<div class="modal" id="img4">
+		<h3>Paisaje 4</h3>
+		<div class="imagen">
+			<a href="#img3">&#60;</a>
+			<a href="#img1"><img src="imagen/pax4.jpg"></a>
+			<a href="#img1">></a>
+		</div>
+		<a class="cerrar" href="">X</a>
+	</div>
+	
+</section>
     <!-- JavaScript-->
     <script src="main.js"></script>
 

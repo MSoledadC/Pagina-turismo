@@ -13,6 +13,10 @@
 
     <script src="https://kit.fontawesome.com/df0028962f.js" crossorigin="anonymous"></script>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- vinculacion bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
 
     <link rel="stylesheet" href="estilos.css">
 
@@ -42,6 +46,7 @@
             </div>
         </nav>
     </header>
+
     <section>
         <svg viewbox="0 0 50 50" width="50" height="50">
             <defs>
@@ -55,31 +60,55 @@
             <rect x="0.5" y="0.5" width="49" height="49" mask="url(#mask)" fill-opacity="1" fill="#E3DFD2" />
         </svg>
     </section>
+
+
     <section class="body_g">
-        <div class="card">
-            <div class="image">
-              <img src="imagen/mapa argentina.jpg"/>
+
+
+
+    </section>
+    <section>
+        <div>
+            <ul>
+                <li><a href="#modal3">REDIMENSIONAR</a></li>
+            </ul>
+            <div id="modal3" class="modalmask">
+                <div class="modalbox resize">
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>REDIMENSIONAR</h2>
+                    <p>También puedes redimensionar la ventana hasta hacerla desaparecer.</p>
+                    <p>Las posibilidades que ofrece CSS3 son múltiples, tan solo hace falta un poco de imaginación para
+                        crear efectos realmente llamativos.</p>
+                </div>
             </div>
-            <div class="details">
-              <div class="center">
-                <h1>STONTUR<br><span>team leader</span></h1>
-                <p><i class="fa-sharp fa-solid fa-location-dot"></i>Emilio, Civit 573, L6300 Santa Rosa, La Pampa</p>
-                <ul>
-                  <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
         </div>
+    </section>
+    <section>
+        <a href="#openModal">Lanzar el modal</a>
 
-        <div class="container">
-            <button class="button type1">
-              Effect one
-            </button>
+        <div id="openModal" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Mi modal</h2>
+                <p>Este es un ejemplo de modal, creado gracias al poder de CSS3.</p>
+                <p>Puedes hacer un montón de cosas aquí, como alertas o incluso crear un formulario de registro aquí
+                    mismo.</p>
             </div>
-
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid ">
+            <div class="row">
+              <div class="col-12 col-md-12">
+                <div class="card" >
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 
