@@ -303,8 +303,7 @@ header h1 {
     text-align: center;
     border-radius: 20px;
     margin-bottom: 30px;
-    
-
+    filter: drop-shadow(2px 4px 6px black);
 }
 
 .titulo_nosotros {
