@@ -1,21 +1,16 @@
-//get the Element
+$(window).on('scroll', function() {
 
-const nabvar = document.querySelector("nav"); 
-const menu = document.querySelector(".menu");
-const menuBtn = document.querySelector(".menu-btn");
+    if ($(window).scrollTop() + $(window).height() > $('.wrapper').outerHeight()) {
+      $('.arrow').hide();
+    } else {
+      $('.arrow').show();
+    }
+  });
 
 
-//toggle
-
-menuBtn.addEventListener( "click", ()=>{
-    
-    nabvar.classList.toggle("nav-background");
-    menu.classList.toggle("nav-toggle");
+$('.arrow').click(function(){
+   $("html").animate({ scrollTop: $('html').prop("scrollHeight")}, 1200);
 });
 
-
-
-
-//
-
+// parte1
 
