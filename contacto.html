@@ -63,36 +63,37 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-md-6">
-                            <form class="formulario_contacto_">
+                            <form class="formulario_contacto_"  action="https://formsubmit.co/mariasoledadcabanillas@gmail.com" method="POST">
+                           <!-- <form class="formulario_contacto_" action="https://formsubmit.co/mariasoledadcabanillas@hotmail.com" method="POST" />-->
                                 <div class="mb-3-contacto">
                                     <label for="Nombre y Apellido" class="form-label-contacto">Nombre y Apellido</label>
                                     <input type="Nombre y Apellido" class="form-control-contacto" id="Nombre y Apellido"
-                                        placeholder="Nombre y Apellido Completo">
+                                        placeholder="Nombre y Apellido Completo" name="Nombre y Apellido" required >
                                 </div>
                                 <div class="mb-3-contacto">
                                     <label for="exampleFormControlInput1" class="form-label-contacto">Email</label>
-                                    <input type="email" class="form-control-contacto" id="Email address" placeholder="Email">
+                                    <input type="email" name="Email" class="form-control-contacto" id="Email address" placeholder="Email" required>
                                 </div>
                                 <div class="mb-3-contacto">
                                     <label for="Celular" class="form-label-contacto">Celular</label>
                                     <input type="Celular" class="form-control-contacto" id="Celular"
-                                        placeholder="Ingresar codigo área sin 15...">
+                                        placeholder="Ingresar codigo área sin 15..." name="Celular">
                                 </div>
-                                <div class="mb-3-contacto">
+                                <!--  <div class="mb-3-contacto">
                                     <label for="Consulta" class="form-label-contacto">Tipo de Consulta</label>
                                     <select class="form-select form-select-sm" id="Consulta"
-                                        aria-label=".form-select-sm example">
+                                        aria-label=".form-select-sm example" name="Consulta">
                                         <option selected>Destinos</option>
                                         <option value="1">Medios de Pago</option>
-                                        <option value="2">Fechas disponibles</option>
+                                        <option  value="2">Fechas disponibles</option>
                                     </select>
-                                </div>
+                                </div>-->
                                 <div class="mb-3-contacto">
                                     <label for="Otras consultas" class="form-label-contacto">Otras consultas</label>
-                                    <textarea class="form-control-contacto" id="Otras consultas" rows="3"></textarea>
+                                    <textarea name="Otras Consultas" class="form-control-contacto" id="Otras consultas" rows="3"></textarea>
                                 </div>
                                 <div class="mb-3-contacto">
-                                    <button type="button" class="btn btn-dark">Enviar</button>
+                                    <button type="submit" value="Enviar" class="btn btn-dark">Enviar</button>
                                 </div>
                             </form>
                         </div>
