@@ -564,7 +564,7 @@ figure.snip0015 {
     overflow: hidden;
     margin: 20px;
     min-width: 220px;
-    max-width: 310px;
+    max-width: 440px;
     max-height: 220px;
     width: 100%;
     background: #000000;
@@ -685,7 +685,6 @@ html {
     justify-content: center;
     align-items: center;
     margin: 0;
-    height: 100%;
     flex-wrap: wrap;
 }
 
