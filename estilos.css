@@ -275,7 +275,6 @@ header h1 {
     margin: 0px;
     padding-bottom: 10px;
     background: #ffc107;
-    filter: opacity(0.7);
     text-transform: capitalize;
 }
 
@@ -301,18 +300,22 @@ header h1 {
 
 .glass_destinos {
     background: #ffc107;
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.18);
     text-align: center;
     border-radius: 20px;
     margin-bottom: 30px;
     filter: drop-shadow(2px 4px 6px black);
     color: #000;
+    text-size-adjust: auto;
 }
 
 .titulo_nosotros {
     font-weight: bold;
+}
+
+.titulo_imagenesdestinos {
+    text-align: center;
+    background: repeating-linear-gradient(45deg, #ffc107, transparent 100px);
 }
 
 .contaco_mapa {
@@ -353,7 +356,7 @@ header h1 {
 
 .formulario_contacto_ {
    width: 30%;
-   margin-top: 30px;
+   margin-top: 0px;
    padding: 50px;
 }
 
@@ -364,10 +367,32 @@ header h1 {
 .form-label-contacto {
     width: 100%;
     display: flex;
+    font-weight: 600;
 }
 
 .form-control-contacto {
     width: 100%;
+    background: linear-gradient(45deg, #faac58, transparent);
+    color: black;
+}
+
+.btn-group-vertical {
+    position: fixed;
+    top: 50%;
+    left: 93%;
+    z-index: 2;
+}
+
+.titulo_form {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 900;
+}
+
+.botonenviar_form {
+    background: linear-gradient(45deg, #faac58, transparent);
+    font-weight: 600;
 }
 
 /* Card contactos */
@@ -877,7 +902,7 @@ a.openModal {
 	height: 100px;
 }
 
-/*Estilos del modal
+Estilos del modal
 
 .modal {
 	display: none;
@@ -911,7 +936,7 @@ a.openModal {
 }
 
 .imagen a {
-	color: #fff;
+	color: #ffc107;
 	font-size: 40px;
 	text-decoration: none;
 	margin: 0 10px;
@@ -927,15 +952,15 @@ a.openModal {
 	width: 500px;
 	height: 100%;
 	max-width: 100%;
-	border: 7px solid #fff;
+	border: 7px solid #ffc107;
 	box-sizing: border-box;
 }
 
 .cerrar {
 	display: block;
-	background: #fff;
-	width: 25px;
-	height: 25px;
+	background: #ffc107;
+	width: 30px;
+	height: 35px;
 	margin: 15px auto;
 	text-align: center;
 	text-decoration: none;
