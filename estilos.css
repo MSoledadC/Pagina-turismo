@@ -409,7 +409,7 @@ header h1 {
 
 .card {
     position: absolute;
-    top: 132%;
+    top: 123%;
     left: 65%;
     /*transform: translate(-50%, -50%);*/
     width: 300px;
