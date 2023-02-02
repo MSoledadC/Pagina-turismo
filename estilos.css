@@ -287,8 +287,12 @@ header h1 {
 .titulo_destinos {
     font-size: clamp(0.2rem, 10vw + 0.5rem, 3rem);
     text-align: center;
-    color: #824400;
+    color: #ffc107;
     background-color: #1f1f1f;
+}
+
+.texto_nosotros {
+    font-size: larger;
 }
 
 
@@ -319,10 +323,11 @@ header h1 {
 }
 
 .contaco_mapa {
-    margin: 25px;
+    
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
+    margin-top: 60px;
+    margin-left: 60px;
 
 }
 
@@ -342,6 +347,11 @@ header h1 {
     color: #000000;
     font-size: clamp(0.5rem, 1vw + 0.5rem, 1rem);
     letter-spacing: 5px;
+    margin-top: 40px;
+    background: linear-gradient(45deg, #ffc107, transparent);
+    border: solid;
+    text-transform: capitalize;
+    padding: 20px;
 }
 
 /*---FORMULARIOS*/
@@ -399,11 +409,11 @@ header h1 {
 
 .card {
     position: absolute;
-    top: 120%;
-    left: 70%;
+    top: 132%;
+    left: 65%;
     /*transform: translate(-50%, -50%);*/
-    width: 360px;
-    height: 650px;
+    width: 300px;
+    height: 750px;
     background: ;
 
 }
@@ -414,9 +424,9 @@ header h1 {
     position: absolute;
     top: 0;
     left: 0;
-    width: 80%;
+    width: 100%;
     /*100%*/
-    height: 100%;
+    height: 60%;
     background: #ffc107;
     transition: .5s;
     transform-origin: left;
@@ -522,6 +532,7 @@ header h1 {
         display: inline-block;
         font-size: 1.4em;
         cursor: pointer;
+        color: #ffc107;
     }
 
     nav .container .nav-toggle {
@@ -562,6 +573,7 @@ header h1 {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
+        color: #ffc107;
     }
 
     .glass>div {
@@ -571,12 +583,31 @@ header h1 {
     @media screen and (max-width:700px) {
         header {
             height: 700px;
+            background-color: black;
+            background-size: contain;
         }
     }
 
     @media screen and (max-width:500px) {
         .glass>div div:nth-child(1) {
             display: none;
+        }
+
+        header {
+            height: 540px;
+            background-color: black;
+            background-size: contain;
+            background: url(imagen/logocontacto.png) no-repeat fixed;;
+        }
+
+        .contaco_mapa{
+            width: 320px;
+            margin-left: 5px;
+        }
+
+        .card {
+            top: 230%;
+            left: 3%;
         }
     }
 }
@@ -754,12 +785,13 @@ svg:hover text {
 
 .titulo_g {
     color: white;
-    text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.4);
+    text-shadow: 1px 3px 4px #ffc107;
     text-align: center;
     font-size: 40px;
     letter-spacing: 0.4px;
     font-family: "Raleway", sans-serif;
     padding-bottom: 50px;
+    padding-top: 30px;
 }
 
 .container_g {
