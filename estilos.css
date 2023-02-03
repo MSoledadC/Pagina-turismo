@@ -418,7 +418,7 @@ header h1 {
     padding-bottom: 20px;
 }
 
-.card_contactoul {
+.card_contacoul {
     display: flex;
     justify-content: center;
 }
@@ -615,13 +615,6 @@ header h1 {
         background: #fff;
     }
 
-    .contaco_mapa{
-        margin-left: 0px;
-    }
-    .contaco_mapa{
-        width: 420px;
-        margin-left: 5px;
-    }
     
 }
 
@@ -682,8 +675,10 @@ header h1 {
         }
 
         .contaco_mapa{
+            overflow: hidden;
+            margin: auto;
             width: 320px;
-            margin-left: 0px;
+            margin-top: 20px;
         }
 
         .card_contacoli {
